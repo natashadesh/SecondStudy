@@ -52,3 +52,20 @@ human_win = not player1_win_dict[win_key]
 #player1_win_dict[the_winner]
 
 #user_input = "sjome"
+def user_ticket_number_input(message_3):
+    """
+    Requst for user to input tickets number.
+    """
+    z = input(f"Please, choose the number of {message_3}:  ").strip()
+    return z
+def collecting_user_information(message_2: int) -> int:
+    """
+    Collecting information - how many tickets the user chose.
+    """
+    while True:
+        ticket_number = message_2
+        if validate_user_input(ticket_number):
+            break
+    print(f"Tickets numbers:  {ticket_number}")
+    return ticket_number
+    

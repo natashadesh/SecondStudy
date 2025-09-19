@@ -1,4 +1,5 @@
 import random
+
 numbers = [1,2,3,4,5,6,7,8,9]
 x = random.choice(numbers)
 for attempt in ["3 attempts", "2 attempts", "1 attempt"]:
